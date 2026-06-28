@@ -101,7 +101,27 @@ rm sing-box.tar.gz
 ```
 
 ---
+## 我的自定义添加
 
+### 集成 shairport（AirPlay 音频接收）
+
+- 添加了 `shairport` 及其相关依赖
+- 预置了 `asound.conf`、`shairport-sync.conf`
+- 编译后（服务自动启用）
+- 声卡配置已调试优化（可根据实际声卡调整 `asound.conf`）
+
+### 配置文件位置（固件内）
+
+- `/etc/asound.conf` —— ALSA 声卡默认配置
+- `/etc/shairport-sync.conf` —— shairport 主配置
+- `/etc/init.d/shairport` —— 启动脚本
+
+---
+
+## 第三方软件包（含本人添加）
+
+* shairport（AirPlay 2 支持）
+* alsa-utils、kmod-sound-core 等音频依赖
 ## Credits
 
 - [bl-mt798x-dhcpd](https://github.com/weekdaycare/bl-mt798x-dhcpd)
