@@ -1,0 +1,10 @@
+#!/bin/sh
+# shairport 自动启用脚本
+
+/etc/init.d/shairport enable
+sleep 3
+/etc/init.d/shairport restart
+
+echo "shairport 服务已启用并启动" > /dev/console
+
+exit 0
